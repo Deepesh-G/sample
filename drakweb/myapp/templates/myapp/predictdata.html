@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    {% load static %}
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;
+background: linear-gradient(90deg, #C7C5F4, #776BCC);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body style="background: #776BCC; ">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:2px;">
+<!--    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>-->
+      <h2 class="w3-bar-item w3-button" >BlackWindow: Monitoring the Dark Web for Cyber Security Information</h2>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+      <br>
+    <div class="w3-right w3-hide-small" style="font-family:Cooper Std Black;" >
+      <a href="/homepage" class="w3-bar-item w3-button">Home</a>
+      <a href="/dataupload" class="w3-bar-item w3-button">Dataset Upload</a>
+ <a href="/modeltraining" class="w3-bar-item w3-button">Random Forest</a>
+        <a href="/xgbst" class="w3-bar-item w3-button">XG Boost</a>
+        <a href="/predictdata" class="w3-bar-item w3-button">Data Prediction</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="text-align:center;color:Black;">
+    <h2> Predict new data</h2>
+    <form class="login" action="{% url 'predictdata' %}" method="POST">
+      {% csrf_token %}
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" placeholder="FWD Init Win Bytes" name="fwdbytes"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" placeholder="Fwd Seg Size Min" name="fwdmin">
+			<br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Idle Max" name="idlemax"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Bwd Packet Length Min" name="bwdmin"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Idle Mean" name="idlemean"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Idle Min" name="idlemin"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Bwd Init Win Bytes" name="bwdbytes"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Packet Length Min" name="pktlenmin"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text"  placeholder="Packet Length Max" name="pktlenmax"><br>
+			<br>
+				</div>
+        <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" placeholder="Flow IAT Min" name="flowmin"><br>
+			<br>
+				</div>
+<div class="login__field">
+
+					<input type="submit" value="Submit" />
+				</div>
+
+      <h4>{{data}} </h4><br>
+
+<br>
+<br>
+    </form>
+</div>
+
+</body>
+</html>
