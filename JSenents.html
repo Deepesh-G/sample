@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in web dev</title>
+    <style>
+        #para{
+            background-color: darkgreen;
+            padding: 16px;
+            color: white;
+            font-style: oblique;
+            border-radius: 9px;
+            border: 1px solid orangered;
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, libero facere cumque iste ex labore! Similique doloribus sequi in pariatur provident explicabo molestiae nulla, atque ab illum quisquam aliquam magnam.</p>
+    </div>
+    <button id="dk" onclick="togglehide()">Show/hide</button>
+    <script>
+
+        para.addEventListener('mouseover', function run() {
+                alert("there is a mouse in the para")
+                
+            });
+        function togglehide() {
+            let dk = document.getElementById('dk');
+            let para = document.getElementById('para');
+            
+            if (para.style.display != 'none') {
+                para.style.display = 'none'
+                alert("this paragraph will bee blocked blocked")
+            } else {
+                para.style.display = 'block'
+                
+            }
+
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,2 @@
+hi macha this a is note 
+This is to check that it has commited in the my git hub repo

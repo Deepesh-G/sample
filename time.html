@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time </title>
+    <style>
+        .con{
+            background-color: aqua;
+            color: black;
+            border: 2px solid darkgreen;
+            padding: 50px;
+            margin: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        #kd{
+            font-style: unset;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con"><span id="kd">is the time rigth now:</span>  </div>
+    
+    <script>
+        function time() {
+            let tim = new Date();
+            console.log(tim)
+            document.getElementById("kd").innerHTML = tim;
+            
+        }
+        let out = setInterval(time, 2000);
+        console.log(out);
+        // clearInterval(out);
+        // let newdate = new Date(year, month, date, hourse, minutes, second, milisecond);
+        // let newdate = new Date(2025, 14, 5, 6, 48);
+        // console.log(newdate);
+
+        // let min = newdate.getMinutes();
+        // console.log(min);
+        
+       
+    </script>
+</body>
+</html>

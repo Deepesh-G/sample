@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    {% load static %}
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;
+background: linear-gradient(90deg, #C7C5F4, #776BCC);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body style="background: #776BCC; ">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:2px;">
+<!--    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>-->
+      <h2 class="w3-bar-item w3-button" >BlackWindow: Monitoring the Dark Web for Cyber Security Information</h2>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+      <br>
+    <div class="w3-right w3-hide-small" style="font-family:Cooper Std Black;" >
+      <a href="/homepage" class="w3-bar-item w3-button">Home</a>
+      <a href="/dataupload" class="w3-bar-item w3-button">Dataset Upload</a>
+<!--                <a href="/datapreprocessing" class="w3-bar-item w3-button">Data Preprocessing</a>-->
+
+<a href="/modeltraining" class="w3-bar-item w3-button">Random Forest</a>
+        <a href="/xgbst" class="w3-bar-item w3-button">XG Boost</a>
+        <a href="/predictdata" class="w3-bar-item w3-button">Data Prediction</a>
+<!--        <a href="/viewgraph" class="w3-bar-item w3-button">Evaluation Matrix</a>-->
+    </div>
+  </div>
+</div>
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<div style="text-align:center;">
+   <h2>Dataset Uploaded</h2>
+        <h3>No. of Training Dataset:{{data1}}</h3>
+        <h3>No. of Testing Dataset:{{data2}}</h3>
+</div>
+</body>
+</html>
